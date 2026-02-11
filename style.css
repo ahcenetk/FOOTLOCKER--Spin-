@@ -33,7 +33,7 @@ body {
   align-items: center;
   gap: 15px;
 }
-
+/* pour mettre les information des case a coté des inputs j'ai fait des labels*/
 /* Label à côté de l'input (Nom:, Prénom:, e-mail:) */
 .input-label {
   font-family: 'Montserrat', sans-serif;
@@ -80,7 +80,7 @@ body {
   }
 }
 
-/* Checkbox */
+/* Checkbox (la case a cocher) */
 .conditions_utilisateur {
   display: flex;
   align-items: center;
@@ -141,7 +141,7 @@ input[type="validation"] {
     box-shadow: inset 1px 1px 1px 0 rgb(255 255 255 / 30%);
   }
 }
-/* AJOUT : Effet d'enfoncement au clic */
+/* AJOUT : Effet d'enfoncement trouvé sur internet */
 .suivant-bouton:active {
   transform: translateY(4px); /* S'enfonce de 4px */
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Ombre réduite */
@@ -162,10 +162,10 @@ input[type="validation"] {
     text-shadow: none;
     paint-order: stroke fill; /* avant de faire cette commande le texte avait une ombre rouge et blanche qui faisait un effet de double contour (débordement du rouge) */
 }
-.sous_NOM {
+.sous_NOM { /* BY en dessous du SNEAKERS WHEEL */
   position: absolute;
-  top: 350px;
-  left: 25%;
+  top: 350px; /* positionnement en hauteur */
+  left: 25%; /* positionnement du coté gauche de la page en % vu que c'est un texte c'est facile de le positionné*/
   transform: translateX(-50%);
   font-size: 1.3rem;
   font-family: 'Montserrat', sans-serif;
@@ -189,7 +189,7 @@ input[type="validation"] {
 .logo { /* a utiliser pour position l'image foot looker dans ma page */
   position: absolute;
     top: 400px;    /* Distance du haut */
-    left: 180px;  /* Distance de la gauche */
+    left: 180px;  /* Distance de la gauche en px vu que c'est png c'est difficile de le positionner en % */
 }
 
 /* Footer links */

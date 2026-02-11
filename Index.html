@@ -17,38 +17,39 @@
 
   <img src="image 9.png" alt="Foot Locker" class="logo">
 
-   <h1 class="Nom">SNEAKERS WHEEL</h1>
+  <h1 class="Nom">SNEAKERS WHEEL</h1>
 
-   <h2 class="sous_NOM">BY</h2>
+  <h2 class="sous_NOM">BY</h2>
 
-   <h3 class="phrase_acroche">Est-ce votre jour de chance ?!</h3>
+  <h3 class="phrase_acroche">Est-ce votre jour de chance ?!</h3>
 
-  <div class="contenue_case">
-    <!-- AJOUT Nom avec label -->
+  <!-- Formulaire sans redirection -->
+  <form class="contenue_case" onsubmit="return false;">
+    <!-- Input Nom avec label sinon revoie allerte remplir la case -->
     <div class="input-group">
       <label class="input-label">Nom:</label>
-      <input type="text" class="liquid-glass" placeholder="" required>
+      <input type="text" class="liquid-glass" name="nom" placeholder="" required>
     </div>
 
-    <!-- AJOUT Prénom avec label  -->
+    <!-- Input Prénom avec label sinon revoie allerte remplir la case-->
     <div class="input-group">
       <label class="input-label">Prénom:</label>
-      <input type="text" class="liquid-glass" placeholder="" required>
+      <input type="text" class="liquid-glass" name="prenom" placeholder="" required>
     </div>
 
-    <!-- AJOUT Email avec label -->
+    <!-- Input Email avec label sinon revoie allerte remplir la case format email@ahcene.com -->
     <div class="input-group">
       <label class="input-label">e-mail:</label>
-      <input type="email" class="liquid-glass" placeholder="" re>
+      <input type="email" class="liquid-glass" name="email" placeholder="" required>
     </div>
     
     <div class="conditions_utilisateur">
-      <input type="checkbox" id="conditions">
+      <input type="checkbox" id="conditions" required>
       <label for="conditions">J'ai lu et j'accepte les conditions d'utilisation</label>
     </div>
     
-    <button class="suivant-bouton">Suivant</button>
-  </div>
+    <button type="submit" class="suivant-bouton">Suivant</button>
+  </form>
 
   <div class="liens_cookies">
     <a href="#">TERMS OF SERVICE</a>
