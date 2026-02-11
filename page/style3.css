@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background-color: #000;
+  background-image: url('../img/background3.png');
+  background-size: 78%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.title,
+.by-text,
+.logo,
+.congrats,
+.email-section,
+.claim-btn,
+.footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* SNEAKERS WHEEL */
+.title {
+  top: 6%;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  -webkit-text-stroke: 6px #E01E2B;
+  paint-order: stroke fill;
+}
+
+/* BY (entre les deux) */
+.by-text {
+  top: 18%;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+/* FOOT LOCKER plus bas et légèrement réduit */
+.logo {
+  top: 25%;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* FELICITATION au-dessus du cadeau */
+.congrats {
+  top: 28%;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+}
+
+/* Pas de cadeau HTML */
+.gift {
+  display: none;
+}
+
+/* EMAIL plus bas */
+.email-section {
+  top: 62%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.email-section label {
+  color: white;
+  font-weight: 600;
+  text-align: right;
+}
+
+.email-input {
+  width: 300px;
+  padding: 0.9rem 1.6rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.35);
+  color: white;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  outline: none;
+}
+
+/* BOUTON sur la chaussure */
+.claim-btn {
+  bottom: 16%;
+  padding: 0.7rem 3rem;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.2px);
+  -webkit-backdrop-filter: blur(3.2px);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  color: rgb(255 255 255 / 90%);
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.claim-btn::before,
+.claim-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.claim-btn::before {
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  filter: url(#glass-distortion);
+  z-index: -1;
+}
+
+.claim-btn::after {
+  box-shadow: inset 1px 1px 1px 0 rgb(255 255 255 / 30%);
+}
+
+.claim-btn:active {
+  transform: translateX(-50%) translateY(4px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  bottom: 3%;
+  display: flex;
+  gap: 32px;
+}
+
+.footer a {
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.liens_cookies {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+  color: rgb(255 255 255 / 70%);/* ma couleur grise de liens */
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.liens_cookies a {
+  color: rgb(255 255 255 / 70%); /* ma couleur grise de liens */
+  text-decoration: none;
+  cursor: pointer; 
+}
+
+.liens_cookies a:hover {
+  color: rgb(255 255 255 / 100%)}
