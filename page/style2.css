@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background-color: #000;
+  background-image: url('../img/Background2.png');
+  background-size: 78%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.logo {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  height: 60px;
+}
+
+.title {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  -webkit-text-stroke: 6px #E01E2B;
+  paint-order: stroke fill;
+}
+
+.subtitle {
+  position: absolute;
+  top: 175px;        /* AVANT : 205px */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: white;
+}
+
+
+
+.spin-btn {
+  position: absolute;
+  bottom: 75px;
+  left: 48.5%;
+  transform: translateX(-50%);
+  padding: 0.7rem 3rem;
+
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.2px);
+  -webkit-backdrop-filter: blur(3.2px);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+
+  color: rgb(255 255 255 / 90%);
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+
+  transition: all 0.1s ease;
+}
+
+/* Effet verre déformant EXACT */
+.spin-btn::before,
+.spin-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.spin-btn::before {
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  filter: url(#glass-distortion);
+  z-index: -1;
+}
+
+.spin-btn::after {
+  box-shadow: inset 1px 1px 1px 0 rgb(255 255 255 / 30%);
+}
+
+/* Effet d'enfoncement au clic */
+.spin-btn:active {
+  transform: translateX(-50%) translateY(4px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
