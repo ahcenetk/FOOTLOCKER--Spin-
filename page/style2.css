@@ -41,7 +41,7 @@ body {
 
 .subtitle {
   position: absolute;
-  top: 175px;        /* AVANT : 205px */
+  top: 175px;        
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -76,7 +76,6 @@ body {
   transition: all 0.1s ease;
 }
 
-/* Effet verre déformant EXACT */
 .spin-btn::before,
 .spin-btn::after {
   content: "";
@@ -97,7 +96,6 @@ body {
   box-shadow: inset 1px 1px 1px 0 rgb(255 255 255 / 30%);
 }
 
-/* Effet d'enfoncement au clic */
 .spin-btn:active {
   transform: translateX(-50%) translateY(4px);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -119,3 +117,24 @@ body {
   font-size: 0.85rem;
   font-weight: 600;
 }
+
+.liens_cookies {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+  color: rgb(255 255 255 / 70%);/* ma couleur grise de liens */
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.liens_cookies a {
+  color: rgb(255 255 255 / 70%); /* ma couleur grise de liens */
+  text-decoration: none;
+  cursor: pointer; 
+}
+
+.liens_cookies a:hover {
+  color: rgb(255 255 255 / 100%)}

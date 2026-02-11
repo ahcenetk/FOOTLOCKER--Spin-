@@ -148,3 +148,24 @@ body {
   font-weight: 600;
   text-decoration: none;
 }
+
+.liens_cookies {
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+  color: rgb(255 255 255 / 70%);/* ma couleur grise de liens */
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.liens_cookies a {
+  color: rgb(255 255 255 / 70%); /* ma couleur grise de liens */
+  text-decoration: none;
+  cursor: pointer; 
+}
+
+.liens_cookies a:hover {
+  color: rgb(255 255 255 / 100%)}
