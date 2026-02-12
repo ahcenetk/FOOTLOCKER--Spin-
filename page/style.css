@@ -45,7 +45,7 @@ body {
 }
 
 /* Style des intérieur des boutons (Nom, Prénom, e-mail) */
-.liquid-glass {
+.liquid-glass { /* on a choisi ce style de bouton qui est plus adapté à notre thème de liquid glass generer sur css glass */
   position: relative;
   padding: 0.8rem 3.5rem;
   color: rgb(255 255 255 / 90%); /* couleur du texte dans les intérieurs des boutons */
